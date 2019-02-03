@@ -82,13 +82,46 @@ function tribonacci(signature, n) {
 
 /* write a function that will take an argument as an integer; that interger will represent the height of the pyramid. The function should output the pyramid drawn with pound sign or asterics. */
 
-let result = '#'
+// let result = '#'
 
-function pyramid(x){
-  for(let i = 0; i < x; i++){
-    console.log(result.repeat(i))
-  }
-  for(let i = x; i > 0; i--){
-    console.log(result.repeat(i))
+// function pyramid(x){
+//   for(let i = 0; i < x; i++){
+//     console.log(result.repeat(i))
+//   }
+//   for(let i = x; i > 0; i--){
+//     console.log(result.repeat(i))
+//   }
+// }
+
+
+// created a loop for FizzBuzz to output each number from 1 - 100 displaying number of FizzBuzz
+
+for (let i = 1; i <= 100; i++){
+  if(i % 15 === 0){
+    console.log('FizzBuzz')
+  }else if(i % 5 === 0){
+    console.log('Buzz')
+  }else if(i % 3 === 0){
+    console.log('Fizz')
+  }else {
+    console.log(i)
   }
 }
+
+/* wrote a function that displays whether the number passed through is FizzBuzz, Buzz, Fizz or just a number */
+
+function FizzBuzz(x){
+  let a = 'Fizz';
+  let b = 'Buzz';
+  if(x % 15 === 0){
+    console.log(a + b)
+  }else if(x % 5 === 0){
+    console.log(b)
+  }else if(x % 3 === 0){
+    console.log(a)
+  }else {
+    console.log(x + ` is just a plain ol' number`)
+  }
+}
+
+FizzBuzz(15)
