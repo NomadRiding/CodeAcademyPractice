@@ -3,11 +3,11 @@
 /* Croquet Club has two memberships, Senior and Open. If age is over 55, and handicap is greater than 7 they are Senior. */
 
 // the way I figured it out
-let data = [[12, 4], [51, 5], [36, 4], [69, 21]]
+// let data = [[12, 4], [51, 5], [36, 4], [69, 21]]
 
-function openOrSenior(data) {
-  return data.map(x => { if (x[0] >= 55 && x[1] > 7) { return 'Senior' } else { return 'Open' } });
-}
+// function openOrSenior(data) {
+//   return data.map(x => { if (x[0] >= 55 && x[1] > 7) { return 'Senior' } else { return 'Open' } });
+// }
 
 /* a method I found later that I liked
 
@@ -77,3 +77,18 @@ function tribonacci(signature, n) {
   return signature.slice(0, n); //return trib - length of n
 }
 */
+
+/******** Full Pyramid  ********/
+
+/* write a function that will take an argument as an integer; that interger will represent the height of the pyramid. The function should output the pyramid drawn with pound sign or asterics. */
+
+let result = '#'
+
+function pyramid(x){
+  for(let i = 0; i < x; i++){
+    console.log(result.repeat(i))
+  }
+  for(let i = x; i > 0; i--){
+    console.log(result.repeat(i))
+  }
+}
